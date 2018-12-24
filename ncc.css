@@ -1,0 +1,324 @@
+  body {  
+    font-size: 100%;
+    margin: 0px 0px 0px 0px;
+    background-color: #FFFFFF;
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 768px) { body { font-size: 75%; } }
+
+
+  main {
+    display: flex;
+    flex-direction: row; /* decide main box behaviour, row or col */
+    flex-basis: auto;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+
+  header {
+    display: flex;
+    font-size: 125%;
+    width: 100vw;
+    height: 60px;
+    padding: 0px;
+    color: darkslategrey;
+    font-family: 'Menlo', 'Courier New', Courier, monospace;
+  }
+
+  footer {
+    display: flex;
+    width: 100vw;
+    height: 100px;
+    padding: 0px;
+    color: #FFCC00;
+    background: darkslategrey;
+    font-family: 'Menlo', 'Courier New', Courier, monospace;
+  }
+  
+  .row {
+    display: flex;
+    width: 100vw;
+    justify-content: space-around; 
+    align-items: center;
+    text-align: center;
+    background: #eeeeee; /* #cfcf #ccffcc light green */ 
+    background-image: url(http://www.fotonix.it/img/ncc/mi_000099110013_crop_tl_1800.jpg); /* 000099110013.jpg */
+    /*background-image: url(http://www.fotonix.it/img/ncc/mi_000099110012_1200_i.jpg); */ /*  13 12 i */
+    /*background-image: url(http://www.fotonix.it/img/ncc/mi_img_0419_bn00_1200.jpg); */
+    /*background-image: url(http://www.fotonix.it/img/ncc/combo3_3_125b_2m_05.jpg);*/ /* 05 07 08 */
+    /*background-image: url(http://www.fotonix.it/img/ncc/sinusoide_640x360_24.png);*/  /* 21 22 23 24 */
+    /*background-image: url(http://www.fotonix.it/img/ncc/schermata_170722_230533.png); */ /* X */
+    /*background-image: url(http://www.fotonix.it/img/ncc/diagodot_640x360_25.png);*/
+    /*background-image: url(http://www.fotonix.it/img/ncc/genova_mare_pianta_261118_1080x608.jpg);*/
+  } 
+
+  .col {
+    /* if this is set to display:flex in flex row mode, then paragraphs will go in line one after the other */
+    width: 30vw;
+    margin: 20px 8px 20px 8px; 
+    background-image: url(img/000099110013_1200_i.jpg);
+    height: auto;  /* auto ? */
+    justify-content: space-around; 
+    align-items: flex-start;
+    text-align: center;
+    
+  }
+
+  /* check if this can be done for p (or .col)
+  @media only screen and (min-width: 320px) and (max-width: 768px) { p { width: 70vw; } }
+  */
+
+  p {
+    text-align: justify;
+    padding: 16px 15px 16px 15px; 
+    margin: 20px 8px 20px 8px; 
+    background: rgba(190, 209, 235, 0.70);
+    border-radius: 8px;
+    /*border: 1px solid darkslategrey;*/
+    letter-spacing: 0.08em;
+    line-height: 1.5;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  }
+
+  p span {
+    display: block;
+}
+
+/* :after text elements */
+
+.no:after{
+    font-family: 'Menlo', 'Courier New', Courier, monospace;
+    letter-spacing: 0.06em;
+    content:'Nodi';
+  }
+
+  .no:hover:after{
+    content:'Nodes';
+    color: #FF8000;
+  }
+
+  .ci:after{
+    font-family: 'Menlo', 'Courier New', Courier, monospace;
+    letter-spacing: 0.06em;
+    content:'Cicli';
+  }
+
+  .ci:hover:after{
+    content:'Cycles';
+    color: #FF8000;
+  }
+
+  .co:after{
+    font-family: 'Menlo', 'Courier New', Courier, monospace;
+    letter-spacing: 0.06em;
+    content:'Connessioni';
+  }
+
+  .co:hover:after{
+    content:'Connections';
+    color: #FF8000;
+  }
+
+
+/*
+In CSS, ::after creates a pseudo-element that is the last child of the selected element. It is often used to add cosmetic content to an element with the content property. It is inline by default.
+*/
+
+
+/* modifiers for single properties */
+
+.monospace {
+    font-family: 'Menlo', 'Courier New', Courier, monospace;
+    font-size: 110%;
+  }
+
+ .txt- {
+    letter-spacing: 0.04em;
+    font-size: 100%;
+  }
+  
+  .txt_l {
+    text-align: left;
+  }
+
+  .txt_c {
+    text-align: center;
+  }
+
+  .txt_r {
+    text-align: right;
+  }
+
+  .top {
+    align-items: flex-start;
+  } 
+
+  .giallo {
+      color: #FFCC00;
+  }
+
+  .arancio {
+      color: #FF8000;
+  }
+  .w20 {
+    width: 20vw;
+  }
+
+  .w25 {
+    width: 25vw;
+  }
+
+  .w30 {
+    width: 30vw;
+  }
+
+  .w33 {
+    width: 33vw;
+  }
+
+  .w40 {
+    width: 40vw;
+  }
+
+  .w50 {
+    width: 50vw;
+  }
+
+  .w75 {
+    width: 75vw;
+  }
+
+  .bg_bianco {
+    background: rgba(255, 255, 255, 0.84); /* white */
+  }
+
+  .bg_giallo {
+    background: rgba(255, 204, 0, 0.55); 
+  }
+
+  .bg_arancio {
+    background: rgba(255, 128, 0, 0.66); 
+  }
+
+  .bg_sg {
+    background: rgba(112, 128, 144, 0.74); /* slategrey */
+  }
+
+  .bg_dsg {
+    background: rgba(47, 79, 79, 0.82); /* darkslategrey; #2f4f4f */
+  }
+
+  .bg_verde {
+    background: rgba(204, 255, 204, 0.74); /* #ccffcc; */
+  }
+
+/* new links */
+  
+.A1n{
+    text-decoration: underline;
+     /* font-size: 1em; relative */
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: slategrey;
+    letter-spacing: 0.08em;
+  }
+  
+.A1n:hover {
+      text-decoration: none;
+      color: #FF5000;
+  }
+
+.A2n{
+    text-decoration: underline;
+     /* font-size: 1em; relative */
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #FF8000;
+    letter-spacing: 0.08em;
+  }
+  
+.A2n:hover {
+      text-decoration: none;
+      color: #FF5000;
+  }
+
+.A3n{
+    text-decoration: underline;
+     /* font-size: 1em; relative */
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color: #cfcfcf;
+    letter-spacing: 0.08em;
+  }
+  
+.A3n:hover {
+      text-decoration: none;
+      color: #FF5000;
+  }
+
+/* shapes */
+
+#arrow-right {
+  width: 0; 
+  height: 0; 
+  border-top: 6vh solid transparent;
+  border-bottom: 6vh solid transparent;
+  border-left: 5vw solid darkslategrey;
+  border-radius: 6px;
+}
+
+#arrow-right:hover {
+border-left: 5vw solid slategrey;
+}
+
+#cerchio {
+    width: 20vw;
+    height: 20vw;
+    background: #FFFFFF;
+    border: 1px black solid;
+    border-radius: 50%
+  }
+
+#punto {
+    width: 1vw;
+    height: 1vw;
+    background: #FFFFFF;
+    border: 1px black solid;
+    border-radius: 50%
+  }
+
+#linea {
+    width: 20vw;
+    height: 1vw;
+    border: 1px black solid;
+  }
+
+/* SVG */
+
+circle {
+	animation-name: rotation;
+	animation-duration: 4.8s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	transform-origin: 160px 160px;
+  will-change: transform;
+  fill: rgba(255, 204, 0, 0.44);
+  stroke: darkslategrey;
+	stroke-width: 2;
+  }
+
+  circle:hover {
+    animation-play-state: paused;
+  }
+  
+@keyframes rotation {
+    100% {
+        transform: rotate(360deg);
+    }
+  }
+
+  @keyframes scale {
+    50% {
+        transform: scale(1.4);
+    }
+  }
