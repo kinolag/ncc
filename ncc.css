@@ -59,7 +59,7 @@
     /* if this is set to display:flex in flex row mode, then paragraphs will go in line one after the other */
     width: 30vw;
     margin: 20px 8px 20px 8px; 
-    background-image: url(img/000099110013_1200_i.jpg);
+    background-image: url(http://www.fotonix.it/img/ncc/000099110013_1200_i.jpg);
     height: auto;  /* auto ? */
     justify-content: space-around; 
     align-items: flex-start;
