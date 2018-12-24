@@ -56,20 +56,15 @@
   } 
 
   .col {
-    /* if this is set to display:flex in flex row mode, then paragraphs will go in line one after the other */
     width: 30vw;
     margin: 20px 8px 20px 8px; 
-    background-image: url(http://www.fotonix.it/img/ncc/000099110013_1200_i.jpg);
+    background-image: url(http://www.fotonix.it/img/ncc/mi_000099110013_1200_i.jpg);
     height: auto;  /* auto ? */
     justify-content: space-around; 
     align-items: flex-start;
     text-align: center;
     
   }
-
-  /* check if this can be done for p (or .col)
-  @media only screen and (min-width: 320px) and (max-width: 768px) { p { width: 70vw; } }
-  */
 
   p {
     text-align: justify;
