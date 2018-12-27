@@ -45,8 +45,8 @@
     align-items: center;
     text-align: center;
     background: #eeeeee; /* #cfcf #ccffcc light green */ 
-    background-image: url(http://www.fotonix.it/img/ncc/mi_000099110013_crop_tl_1800.jpg); /* 000099110013.jpg */
-    /*background-image: url(http://www.fotonix.it/img/ncc/mi_000099110012_1200_i.jpg); */ /*  13 12 i */
+    /*background-image: url(http://www.fotonix.it/img/ncc/mi_000099110013_crop_tl_1800.jpg);*/ /* 000099110013.jpg */
+    background-image: url(http://www.fotonix.it/img/ncc/mi_000099110012_1200_i.jpg); /*  13 12 i */
     /*background-image: url(http://www.fotonix.it/img/ncc/mi_img_0419_bn00_1200.jpg); */
     /*background-image: url(http://www.fotonix.it/img/ncc/combo3_3_125b_2m_05.jpg);*/ /* 05 07 08 */
     /*background-image: url(http://www.fotonix.it/img/ncc/sinusoide_640x360_24.png);*/  /* 21 22 23 24 */
@@ -59,7 +59,8 @@
     /* if this is set to display:flex in flex row mode, then paragraphs will go in line one after the other */
     width: 30vw;
     margin: 20px 8px 20px 8px; 
-    background-image: url(http://www.fotonix.it/img/ncc/mi_000099110013_1200_i.jpg);
+    background: #cfcfcf;
+    background-image: url(http://www.fotonix.it/img/ncc/diagodot_640x360_25.png);
     height: auto;  /* auto ? */
     justify-content: space-around; 
     align-items: flex-start;
@@ -67,14 +68,13 @@
     
   }
 
-
   p {
     text-align: justify;
     padding: 16px 15px 16px 15px; 
     margin: 20px 8px 20px 8px; 
     background: rgba(190, 209, 235, 0.70);
     border-radius: 8px;
-    /*border: 1px solid darkslategrey;*/
+    /* border: 1px solid darkslategrey; */
     letter-spacing: 0.08em;
     line-height: 1.5;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -82,7 +82,7 @@
 
   p span {
     display: block;
-}
+  }
 
 /* :after text elements */
 
@@ -127,12 +127,17 @@ In CSS, ::after creates a pseudo-element that is the last child of the selected 
 
 /* modifiers for single properties */
 
-.monospace {
+  .spazio {
+    padding: 16px 4px 16px 4px;
+    letter-spacing: 0.08em;
+  }
+
+  .monospace {
     font-family: 'Menlo', 'Courier New', Courier, monospace;
     font-size: 110%;
   }
 
- .txt- {
+  .txt- {
     letter-spacing: 0.04em;
     font-size: 100%;
   }
@@ -195,6 +200,10 @@ In CSS, ::after creates a pseudo-element that is the last child of the selected 
 
   .w50 {
     width: 50vw;
+  }
+
+  .w60 {
+    width: 60vw;
   }
 
   .w75 {
@@ -271,14 +280,14 @@ In CSS, ::after creates a pseudo-element that is the last child of the selected 
 #arrow-right {
   width: 0; 
   height: 0; 
-  border-top: 4vh solid transparent;
-  border-bottom: 4vh solid transparent;
-  border-left: 2vw solid darkslategrey;
+  border-top: 3vh solid transparent;
+  border-bottom: 3vh solid transparent;
+  border-left: 3vw solid darkslategrey;
   border-radius: 4px;
 }
 
 #arrow-right:hover {
-border-left: 2vw solid slategrey;
+border-left: 3vw solid slategrey;
 }
 
 .arrow-down {
@@ -302,7 +311,7 @@ border-top: 3.3vw solid darkslategrey;
   border-left: 3.3vh solid transparent; 
   border-bottom: 3.3vw solid rgba(255, 204, 0, 0.55); 
   border-radius: 4px;
-  margin: 12px 12px 0px 12px; 
+  margin: 6px 12px 2px 12px; 
 }
 
 .arrow-up:hover {
@@ -340,7 +349,7 @@ circle {
 	animation-timing-function: ease-in-out;
 	transform-origin: 160px 160px;
   will-change: transform;
-  fill: rgba(255, 204, 0, 0.44);
+  fill: rgba(255, 204, 0, 0.46);
   stroke: darkslategrey;
 	stroke-width: 2;
   }
