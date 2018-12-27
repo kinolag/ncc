@@ -67,9 +67,6 @@
     
   }
 
-  /* check if this can be done for p (or .col)
-  @media only screen and (min-width: 320px) and (max-width: 768px) { p { width: 70vw; } }
-  */
 
   p {
     text-align: justify;
@@ -277,7 +274,7 @@ In CSS, ::after creates a pseudo-element that is the last child of the selected 
   border-top: 4vh solid transparent;
   border-bottom: 4vh solid transparent;
   border-left: 2vw solid darkslategrey;
-  border-radius: 6px;
+  border-radius: 4px;
 }
 
 #arrow-right:hover {
@@ -289,13 +286,13 @@ border-left: 2vw solid slategrey;
   height: 0; 
   border-right: 3.3vh solid transparent;
   border-left: 3.3vh solid transparent; 
-  border-top: 3.2vw solid rgba(255, 204, 0, 0.55); 
-  border-radius: 6px;
+  border-top: 3.3vw solid rgba(255, 204, 0, 0.55); 
+  border-radius: 4px;
   margin: 0px 12px 0px 12px; 
 }
 
 .arrow-down:hover {
-border-top: 3.2vw solid darkslategrey;
+border-top: 3.3vw solid darkslategrey;
 }
 
 .arrow-up {
@@ -303,13 +300,13 @@ border-top: 3.2vw solid darkslategrey;
   height: 0; 
   border-right: 3.3vh solid transparent;
   border-left: 3.3vh solid transparent; 
-  border-bottom: 3.2vw solid rgba(255, 204, 0, 0.55); 
-  border-radius: 6px;
+  border-bottom: 3.3vw solid rgba(255, 204, 0, 0.55); 
+  border-radius: 4px;
   margin: 12px 12px 0px 12px; 
 }
 
 .arrow-up:hover {
-border-bottom: 3.2vw solid darkslategrey;
+border-bottom: 3.3vw solid darkslategrey;
 }
 
 #cerchio {
