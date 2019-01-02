@@ -33,7 +33,7 @@ document.getElementById("a0").addEventListener("click", shuffleNo);
 
 function shuffleCi() {
   cicli = cicli.shuffle();
-  for(let i=0; i < arrayA.length; i++) {
+  for(let i=0; i < arrayB.length; i++) {
     document.getElementById(arrayB[i]).innerText = cicli[i];
   }
 }
@@ -42,7 +42,7 @@ document.getElementById("b0").addEventListener("click", shuffleCi);
 
 function shuffleCo() {
   connessioni = connessioni.shuffle();  
-  for(let i=0; i < arrayA.length; i++) {
+  for(let i=0; i < arrayC.length; i++) {
     document.getElementById(arrayC[i]).innerText = connessioni[i];
   }
 }
