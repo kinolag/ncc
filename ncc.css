@@ -86,10 +86,10 @@
 
 /* :after text elements */
 
-.no:after{
+  .no:after{
     font-family: 'Menlo', 'Courier New', Courier, monospace;
     letter-spacing: 0.06em;
-    content:'Nodi';
+    content:'Nodi\00a0';
   }
 
   .no:hover:after{
@@ -100,7 +100,7 @@
   .ci:after{
     font-family: 'Menlo', 'Courier New', Courier, monospace;
     letter-spacing: 0.06em;
-    content:'Cicli';
+    content:'Cicli\00a0';
   }
 
   .ci:hover:after{
