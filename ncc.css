@@ -71,7 +71,7 @@
     text-align: justify;
     padding: 16px 15px 16px 15px; 
     margin: 20px 8px 20px 8px; 
-    background: rgba(190, 209, 235, 0.70);
+    background: transparent;
     border-radius: 8px;
     /* border: 1px solid darkslategrey; */
     letter-spacing: 0.08em;
@@ -165,6 +165,10 @@ In CSS, ::after creates a pseudo-element that is the last child of the selected 
       color: #FF8000;
   }
 
+  .sg {
+    color: slategrey;
+  }
+
   .dsg {
     color: darkslategrey;
   }
@@ -174,7 +178,7 @@ In CSS, ::after creates a pseudo-element that is the last child of the selected 
   }
 
   .giallo2:hover {
-  color: #CCFFCC;
+    color: #CCFFCC;
   }
 
   .w10 {
@@ -235,6 +239,10 @@ In CSS, ::after creates a pseudo-element that is the last child of the selected 
 
   .bg_verde {
     background: rgba(204, 255, 204, 0.74); /* #ccffcc; */
+  }
+
+  .bg_azzurro {
+    background: rgba(190, 209, 235, 0.70);
   }
 
 /* new links */
