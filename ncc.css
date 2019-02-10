@@ -9,7 +9,7 @@
 
   main {
     display: flex;
-    flex-direction: row; /* decide main box behaviour, row or col */
+    flex-direction: row;
     flex-basis: auto;
     flex-wrap: wrap;
     width: 100vw;
@@ -49,19 +49,18 @@
     background-image: url(http://www.fotonix.it/img/ncc/mi_000099110012_1200_i.jpg); /*  13 12 i */
     /*background-image: url(http://www.fotonix.it/img/ncc/mi_img_0419_bn00_1200.jpg); */
     /*background-image: url(http://www.fotonix.it/img/ncc/combo3_3_125b_2m_05.jpg);*/ /* 05 07 08 */
-    /*background-image: url(http://www.fotonix.it/img/ncc/sinusoide_640x360_24.png);*/  /* 21 22 23 24 */
+    /*background-image: url(http://www.fotonix.it/img/ncc/sinusoide_640x360_24.png);*/ /* 21 22 23 24 */
     /*background-image: url(http://www.fotonix.it/img/ncc/schermata_170722_230533.png); */ /* X */
     /*background-image: url(http://www.fotonix.it/img/ncc/diagodot_640x360_25.png);*/
     /*background-image: url(http://www.fotonix.it/img/ncc/genova_mare_pianta_261118_1080x608.jpg);*/
   } 
 
   .col {
-    /* if this is set to display:flex in flex row mode, then paragraphs will go in line one after the other */
     width: 30vw;
     margin: 20px 8px 20px 8px; 
     background: #cfcfcf;
     background-image: url(http://www.fotonix.it/img/ncc/diagodot_640x360_25.png);
-    height: auto;  /* auto ? */
+    height: auto; 
     justify-content: space-around; 
     align-items: flex-start;
     text-align: center;
@@ -178,6 +177,10 @@ In CSS, ::after creates a pseudo-element that is the last child of the selected 
   color: #CCFFCC;
   }
 
+  .w10 {
+    width: 10vw;
+  }
+
   .w20 {
     width: 20vw;
   }
@@ -287,7 +290,20 @@ In CSS, ::after creates a pseudo-element that is the last child of the selected 
 }
 
 #arrow-right:hover {
-border-left: 3vw solid slategrey;
+  border-left: 3vw solid slategrey;
+}
+
+#arrow-left {
+  width: 0; 
+  height: 0; 
+  border-top: 3vh solid transparent;
+  border-bottom: 3vh solid transparent;
+  border-right: 3vw solid darkslategrey;
+  border-radius: 4px;
+}
+
+#arrow-left:hover {
+  border-right: 3vw solid slategrey;
 }
 
 .arrow-down {
@@ -301,7 +317,7 @@ border-left: 3vw solid slategrey;
 }
 
 .arrow-down:hover {
-border-top: 3.3vw solid darkslategrey;
+  border-top: 3.3vw solid darkslategrey;
 }
 
 .arrow-up {
@@ -315,7 +331,7 @@ border-top: 3.3vw solid darkslategrey;
 }
 
 .arrow-up:hover {
-border-bottom: 3.3vw solid darkslategrey;
+  border-bottom: 3.3vw solid darkslategrey;
 }
 
 #cerchio {
@@ -343,19 +359,19 @@ border-bottom: 3.3vw solid darkslategrey;
 /* SVG */
 
 circle {
-	animation-name: rotation;
-	animation-duration: 4.8s;
-	animation-iteration-count: infinite;
-	animation-timing-function: ease-in-out;
-	transform-origin: 160px 160px;
+  animation-name: rotation;
+  animation-duration: 4.8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  transform-origin: 160px 160px;
   will-change: transform;
   fill: rgba(255, 204, 0, 0.46);
   stroke: darkslategrey;
-	stroke-width: 2;
+  stroke-width: 2;
   }
 
-  circle:hover {
-    animation-play-state: paused;
+circle:hover {
+  animation-play-state: paused;
   }
   
 @keyframes rotation {
